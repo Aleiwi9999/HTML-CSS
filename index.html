@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--                                meta
+         Defines metadata attached to a web page, self-closing
+    -->
+    <meta charset="UTF-8" /> <!--Defines the character encoding for the whole web page.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="desciption" content="The first web page" /> <!--title المعلومات التى تظهر في غوغل تحت -->
+    <title>HTML</title> <!--title of the page-->
+</head>
+
+<body>
+    <!--                                     Elements:
+    -Block
+    -Inline
+-->
+
+    <!--                                Headers(block)
+    <h1>-<h6>
+        -Each web page must have only one <h1> heading
+-->
+    <h1>First-level heading</h1>
+    <h2>Second-level heading</h2>
+    <h3>Third-level heading</h3>
+    <h4>Fourth-level heading</h4>
+    <h5>fifth-level heading</h5>
+    <h6>Sixth-level heading</h6>
+
+    <hr>
+
+
+    <h3>Paragraph:</h3>
+    <!--
+        -Defines a simple paragraph of text.
+        -block
+    -->
+    <p id="paragraph-lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam similique unde molestias
+        pariatur! Eius quos
+        necessitatibus hic maiores neque provident nostrum veritatis quisquam doloremque itaque, aliquid minus
+        laudantium corporis illum?</p>
+
+
+    <!--                                 Attributes
+        -Global-Attributes:hidden ,
+        -Elements-Attributes: 
+
+    -->
+
+    <hr>
+
+    <h3>Formatting Elements:</h3>
+    <p>This is <b>bold</b> text</p>
+    <p>This is <strong>stronge</strong> text</p>
+    <p>This is <i>italic</i> text</p>
+    <p>This is <em>emphasized</em> text</p>
+    <p>This is <mark>mark</mark> text</p>
+    <p>This is <small>small</small> text</p>
+    <p>This is <del>deleted</del> text</p>
+    <p>This is <ins>inserted</ins> text</p>
+    <p>This is H<sub>2</sub>O subscript text</p>
+    <p>This is X<sup>2</sup> superscript text</p>
+
+    <hr>
+    <!--                    Links  Ancher Tag
+        -Creates a link to a URL: a web page, a section within a page, an email address...  
+        -inline
+        -attributes:
+                -target:
+                        -_blank: open the link in new page
+                        -_self: open the link in same page
+                title: 
+                        -الكلام اللي سوف يظهر عند الوقوف على كلمة الللينك
+    -->
+    <h3>Ancher Tag:</h3>
+    <a href="https://google.com" target="_blank" title="Go to google" />Google</a>
+    <a href="#paragraph-lorem">paragraph-lorem</a>
+    <a href="mailto:aleiwi9@gmail.com">Contact Me</a>
+    <a href="tel:+905527548929">05527548929</a> <br>
+    <a href="https://facebook.com"><img src="../Html5/imgs/facebook.png" alt="facebook" width="100px"
+            height="100px"></a>
+    <a href="https://instgram.com"><img src="../Html5/imgs/instagram.png" alt="instgram" width="100px"
+            height="100px"></a>
+
+    <hr>
+    <!--                    image
+    -inline
+    -self-closing
+    -attributes:
+                -src: The URL where the image is hosted.
+                -alt: Alternative text to describe the image if it's not available.
+                -width
+                -height
+-->
+
+    <hr>
+    <h3>Lists:</h3>
+    <!--                ol
+    -block
+    -ol: Defines an ordered list
+    -li: Defines list item
+    -attributes:
+                -type:
+                    -1: (default)Uses numbers. 
+                    -a: Uses lowercase letters.
+                    -A: Uses uppercase letters.
+                    -i: Uses lowercase Roman numerals.
+                    -I: Uses uppercase Roman numerals.
+                -start=""
+                -reversed
+-->
+    <h4>1-Ordered List:</h4>
+    <ol reversed>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+    </ol>
+    <ol type="i">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+    </ol>
+
+    <!--                                    ul
+    -block
+    -ul: defines an unordered list
+    -li: defines the list item
+    -attributes:
+                -disc (default)
+                -circle
+                -square
+                -none
+                .
+                .
+                .
+
+-->
+    <h4>2-Unordered List:</h4>
+    <ul>
+        <li>Coffee
+            <ul type="square">
+                <li>Americano</li>
+                <li>Espresso</li>
+            </ul>
+        </li>
+        <li>Tea
+            <ul type="circle">
+                <li>Milk Tea</li>
+                <li>Black Tea</li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <!--                            Description List
+        -block
+        -dl: defines a description list
+        -dt: description term
+        -dd: description data
+
+    -->
+    <h3>3-Description List:</h3>
+    <dl>
+        <dt>WEB</dt>
+        <dd>The part of the Internet that contains websites and web pages</dd>
+        <dt>HTML</dt>
+        <dd>A markup language for creating web pages</dd>
+        <dt>CSS</dt>
+        <dd>A technology to make HTML look better</dd>
+    </dl>
+
+    <hr>
+    <!--                            Table
+        -block
+        -table:Defines a container for tabular data.
+        -thead ليست ضرورية ولكن حاى لو غيرت ترتيب البيانات رح تترتب تلقائي
+        -tbody ليست ضرورية ولكن حاى لو غيرت ترتيب البيانات رح تترتب تلقائي
+        -tfoot ليست ضرورية ولكن حاى لو غيرت ترتيب البيانات رح تترتب تلقائي
+        -caption: title of the table
+        -tr: table row
+        -td: table data cell
+        -th: table header cell
+        -attributes:
+                    -colspan
+                    -rowspan
+    -->
+    <h3>Tables:</h3>
+    <table border="1px" cellpadding="2px">
+        <caption>Company</caption>
+        <tr>
+            <th>Person</th>
+            <th>Most Interest</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td>HTML tables</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Ahmed</td>
+            <td>Web accessibility</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>Omer</td>
+            <td>JavaScript frameworks</td>
+            <td>29</td>
+        </tr>
+        <tr>
+            <td>Average age</td>
+            <td colspan="2">33</td>
+        </tr>
+    </table>
+
+    <hr>
+    <!--
+        -span:
+              -inline,Defines a generic inline container of content
+        -br
+              -inline,Defines a line break(new line) within a text.
+        -hr
+              -block,defines a horizontal rule 
+        -div
+              -is a generic block container for other elements
+
+    -->
+
+    <!--                        HTML Entities
+        -&entity_name;
+            -&lt; less than
+            -&gt; greater than
+            -&amp; ampersand
+            -&quot; double quotation mark
+            -&apos; single quotation mark 
+            -&copy; copyright
+            -&dollar;
+    -->
+    <h3>HTML Entities: </h3>
+    <p>less than: &lt; </p>
+    <p>greater than: &gt;</p>
+    <p>double quotation mark: &quot;</p>
+    <p>single quotation mark: &apos;</p>
+    <p>copyright: &copy;</p>
+    <p>dollar: &dollar;</p>
+
+    <!--                        semantic Elements(block)
+        -header: block,defines the header of a web page or section.
+        -nav: Defines a section with navigation links,just one in our site.
+        -section: Defines a section within a web page.
+        -aside: Defines a block of content that is related to the main content. Displayed as a sidebar usually.        
+        -article: Defines a self-contained block of content that can exist in any context,It can have its own,just one in our site. 
+                  header, footer, sections... Useful for a list of blog posts.
+        -main: Defines the main content of a web page. Can be displayed with a sidebar
+        -figure: Defines a single self-contained element, usually an image.
+                -figcaption:define a caption for the image
+        -footer: Defines the footer of a web page or section.
+    -->
+
+    <hr>
+    <!--                                audio
+        -block
+        -Allows to embed an audio clip into a web page.
+        -attributes:
+                    -controls
+                    -autoplay
+                    -muted
+                    -loop
+        -لها شكلين
+    -->
+    <h3>Audio:</h3>
+    <!--First Way-->
+    <audio src="../Html5/audio/062.mp3" controls>Your browser does not support audio tag</audio>
+    <!--Second Way-->
+    <audio controls autoplay muted loop>
+        <source src="../Html5/audio/067.mp3" type="audio/mpeg">
+        <source src="../Html5/audio/067.ogg" type="audio/ogg">
+        Your browser does not support audio tag
+    </audio>
+
+    <hr>
+    <!--                        video
+        -block
+        -Allows to embed an video clip into a web page.
+        -attributes:
+                    -controls
+                    -autoplay
+                    -muted
+                    -loop
+                    -width
+                    -height
+                    -poster
+    -->
+    <h3>Video:</h3>
+    <!--First way-->
+    <video src="../Html5/video/muhamed_ayub.mp4" controls width="600px" height="400px">Your browser does not support
+        video tag</video>
+    <!--second way-->
+    <video controls loop width="600px" height="400px" poster="../Html5/imgs/quran.jpg">
+        <source src="../Html5/video/muhamed_ayub.mp4" type="video/mp4">
+        <source src="../Html5/video/muhamed_ayub.ogg" type="video/ogg">
+        Your browser does not support video tag
+        <track src="en.vtt" kind="subtitles" srclang="en" label="English" />
+        <track src="fr.vtt" kind="subtitles" srclang="fr" label="france" />
+    </video>
+
+    <hr>
+
+    <!--                            
+    -form: block, is used to collect user input.
+    -form's attributes:
+                        -action: Defines which URL the form's information is sent to when submitted.(default البيانات تنبعث الى الصفحة نفسها)
+                        -method: Defines the HTTP method used when submitting the form.
+                                -post: URLالبيانات لا تظهر في ال .
+                                -get: البيانات تظهر
+                        -target
+                        -novalidat
+    -elements of form tag:
+        -label
+        -input
+        -button
+        -select,option,optgroup
+        -textarea
+        -fieldset
+        -legend
+        -datalist
+-->
+    <!--
+    -input: inline,specifies an input field where the user can enter data.
+    -attributes:
+                -type:Defines the type of form input.
+                -placeholder: Defines a non-selectable placeholder text that only appears when the input is empty.
+                -required :Tells the browser that this input is required. Leaving it empty will show a warning.
+                -name: Defines the unique identifier for that input within the form
+                -value: اظهار القيمة في مربع الادخال ليتم تغييرها فيما بعد وايضا تستخدم لتغيير اسم الزر
+                -disabled: البيانات لا تنبعث قابل للنسخ غير قابل للتعديل
+                -readonly: البيانات تنبعث قابل للنسخ وغير قابل للتعديل
+                -autofocus: اول ما تتحدث الصفحة ينعمل لها 
+                -minlength
+                -maxlength
+        -type:
+                -text
+                -password
+                -email
+                -hidden: بيانات تنبعث مع الفورم ولا تظهر في الصفحة
+                -color:creates a color picker.
+                -range:creates a range input control,This control is a slider where a value is selected in a range, between a minimum and a maximum value.
+                -number:creates a numeric input field,A spinner allows the user to increment and decrement by a predefined value.
+                -radio: Radio buttons work together in groups of two or more, but the selection is exclusive, that is, only one can be selected.
+                        -attribute: checked
+                        -note: يكون واحد في كلهن عشان تربطهن مع بعض name لازم ال
+                -checkbox: Checkboxes let users select multiple options by ticking one or more boxes.
+                        -attribute: checked
+                -file: Clicking it will open file-selection dialog,can select  more than one if we use multiple attribute.
+                -tel: creates an input field for a telephone number.
+                -url:This field only accepts valid URLs.
+                -search: creates a search text field,Search fields are similar to text fields but are designed for search queries.
+                -time: creates an input field that accepts a time value.(hour:minute AM/BM)
+                -week:accepts a week and year value.(week,year)
+                -month:accepts a month and year value.(month year)
+                -date: accepts a date value(month/day/year)
+                -datetime-local:accepts a date and time value 
+        
+            -select: block,a drop-down list located outside a form (but still a part of the form):
+                    -optgroup
+                            -option
+                                    -selected
+            -textarea: inline,a multi-line text input,accepts an unlimited number of characters. Textareas will create scrollbars when the text becomes too large.
+                        -minlength
+                        -maxlength
+                        -rows
+                        -cols
+            -datalist:block,This list is used by a textbox which displays the data items in a dropdown,autocomplete
+
+                -rest: creates a reset button,clears all form values to their original values.
+                -submit
+
+-->
+
+    <h3>Form:</h3>
+    <form action="" method="get" novalidate target="_blank">
+        <fieldset>
+            <legend>Form</legend>
+            <label for="usr">username</label> <br>
+            <input type="text" id="usr" name="usr" value="aleiwi" readonly> <br>
+            <label>
+                password <br>
+                <input type="password" name="pass" minlength="10" maxlength="30" placeholder="password" required>
+            </label> <br>
+            <label for="email">email</label> <br>
+            <input type="email" id="email" name="email" value="aleiwi9@gmail.com" disabled> <br>
+            <label>color <input type="color" name="color"></label> <br>
+            <label>Range <br> <input type="range" name="range" min="0" max="100" step="10" value="20"></label><br>
+            <label>Number <input type="number" min="0" max="100" step="20" value="10"></label> <br>
+
+            <div>
+                <fieldset>
+                    <legend>Your native language</legend>
+                    <label>
+                        <input type="radio" name="lang" value="ar" checked>Arabic
+                    </label>
+                    <label>
+                        <input type="radio" name="lang" value="en">English
+                    </label>
+                    <label>
+                        <input type="radio" name="lang" value="fr">French
+                    </label>
+                </fieldset>
+            </div>
+            <br>
+            <div>
+                <fieldset>
+                    <legend>Your favorite technologies</legend>
+                    <label><input type="checkbox" name="html" value="html">HTML</label> <br>
+                    <label><input type="checkbox" name="css" value="css" checked>CSS</label> <br>
+                    <label><input type="checkbox" name="js" value="js">JS</label> <br>
+                </fieldset>
+            </div>
+            <br>
+            <div>
+                <fieldset>
+                    <legend>Select and upload images</legend>
+                    <input type="file" multiple>
+                </fieldset>
+            </div>
+            <br>
+            <label>Tel <input type="tel"></label> <br>
+            <br>
+            <div>
+                <fieldset>
+                    <legend>Your website</legend>
+                    <input type="url" placeholder="Enster URL...">
+                </fieldset>
+            </div>
+            <br>
+            <label>search <input type="search"></label> <br>
+            <br>
+            <div>
+                <fieldset>
+                    <legend>Time</legend>
+                    <label>time <input type="time"></label> <br> <br>
+                    <label>week <input type="week"></label> <br> <br>
+                    <label>month <input type="month"></label> <br> <br>
+                    <label>date <input type="date"></label> <br> <br>
+                    <label>datetime-local <input type="datetime-local"></label> <br> <br>
+                </fieldset>
+            </div>
+            <br> <br> <br>
+
+            <label for="cntry">Country:</label>
+            <select name="country" id="cntry">
+                <optgroup label="Asia">
+                    <option value="india">India</option>
+                    <option value="china">China</option>
+                    <option value="Japan">Japan</option>
+                    <option value="iraq">Iraq</option>
+                    <option value="syria" selected>Syria</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option value="russia">russia</option>
+                    <option value="germany">Germany</option>
+                    <option value="france">France</option>
+                    <option value="spain">Spain</option>
+                    <option value="italy">Italy</option>
+                </optgroup>
+            </select>
+
+            <br> <br>
+
+            <textarea name="comment" cols="20" rows="10" placeholder="Leave your comment here..."></textarea>
+            <br>
+
+            <label>country
+                <input list="countries" name="countries" placeholder="Type a country">
+                <datalist id="countries">
+                    <option value="india">
+                    <option value="china">
+                    <option value="Japan">
+                    <option value="iraq">
+                    <option value="syria">
+                </datalist> <br>
+
+            </label>
+            <input type="reset">
+            <input type="submit" value="save"> <!--value="" تستخدم لتغير اسم الزر-->
+        </fieldset>
+    </form>
+
+
+    <hr>
+    <!--
+    -q:inline, defines a short quotation.
+    -blockquote:block, Defines a long quotation.
+
+
+
+-->
+    <h3>inline short quotation:</h3>
+    <p>He looks around and says <q>I'll be back</q>. </p>
+
+    <h3>block long quotation:</h3>
+    <p>
+    <blockquote>Be less curious about people and more curious about ideas.</blockquote>
+    </p>
+
+    <!--button:inline,defines a clickable button used by js.-->
+    <h3>button:</h3>
+    <button>Click</button>
+
+    <hr>
+    <!--
+        -wbr:  word break opportunity , which is a suggestion to the browser where to break a word at the end of a line.
+        -تحدد المكان اللذي سوف يتم كسر النص او اللينك منه
+    -->
+
+    <!--
+        -bdi:inline,bidirectional isolation
+    -->
+    <h3>bidirectional isolation:</h3>
+    <p>hello <bdi>السلام عليكم</bdi> 2</p>
+
+    <hr>
+    <!--
+        -code: inline,tag is used to define a piece of computer code.
+        -pre:block,Defines preformatted text.االمسافات واي شئ كما في المحرر يبقى كما هو
+
+
+    -->
+    <h3>preformated text:</h3>
+    <pre>
+        var x=10;
+
+        var y=20;
+
+        consol.log(x + y);
+     </pre>
+
+    <hr>
+    <!--
+        -iframe:block,An iframe element embeds a web page inside another web page.
+     -->
+    <h3>iframe:</h3>
+    <iframe src="https://htmlreference.io/" width="400px" height="300px"></iframe>
+
+    <hr>
+
+    <!--
+        -liveserver
+        -inspect -> lighthouse 
+        عشان تشوف الاخطاء والنواقص في موقعك
+
+    -->
+</body>
+
+</html>
